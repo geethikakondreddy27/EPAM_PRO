@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Manipulation</title>
+</head>
+<body>
+    <script>
+        // Creating an object
+        let person = {
+            name: "John",
+            age: 25,
+            city: "New York"
+        };
+
+        // Accessing properties
+        document.write("Name: " + person.name + "<br>");
+
+        // Modifying properties
+        person.age = 26;
+        document.write("Age: " + person.age + "<br>");
+
+        // Adding a new property
+        person.country = "USA";
+        document.write("Person Object: " + JSON.stringify(person) + "<br>");
+
+        // Looping through an object
+        for (let key in person) {
+            document.write(`${key}: ${person[key]}<br>`);
+        }
+
+        // Checking if a property exists
+        document.write("City exists: " + ("city" in person));
+    </script>
+</body>
+</html>
