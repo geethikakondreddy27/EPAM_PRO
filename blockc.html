@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Block Scope Example</title>
+</head>
+<body>
+    <h1>Check the Console for Output</h1>
+    <script>
+        // Block Scope
+        function sports() {
+            if (10 < 20) {
+                let cricket = "virat";
+                document.write(cricket + "<br>");
+            }
+            try {
+                document.write(cricket);
+            } catch (error) {
+                document.write("Error: " + error.message);
+            }
+        }
+        sports();
+    </script>
+</body>
+</html>
