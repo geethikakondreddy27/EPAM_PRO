@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Example</title>
+</head>
+<body>
+    <h1>Check the Console for Output</h1>
+    <script>
+        // Creating an array
+        let fruits = ["Apple", "Banana", "Cherry"];
+
+        // Accessing elements
+        console.log(fruits[0]); // Output: Apple
+
+        // Adding an element to the end
+        fruits.push("Mango");
+        console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Mango"]
+
+        // Removing the last element
+        fruits.pop();
+        console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+
+        // Iterating through an array
+        fruits.forEach(fruit => console.log(fruit));
+
+        // Finding an element
+        console.log(fruits.includes("Banana")); // Output: true
+    </script>
+</body>
+</html>
