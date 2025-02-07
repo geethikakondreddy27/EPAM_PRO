@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Alert, Prompt, and Confirm</title>
+</head>
+<body>
+    <h1>Check the Alerts</h1>
+    <script>
+        alert("This is an Alert Message to User");
+        let userName = prompt("Please Enter Your Name: ");
+        let userConfirmation = confirm("Are You Sure: ");
+        document.write("Hello, " + (userName ? userName : "User") + "!<br>");
+        document.write("User Confirmation: " + (userConfirmation ? "Yes" : "No"));
+    </script>
+</body>
+</html>
